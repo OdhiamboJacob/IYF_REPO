@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Document</title>
+    <style>
+        .flexcont{
+            display:flex;
+            align-items: baseline;
+            margin-right: 10px;
+        }
+        .flexitem1{
+            background-color: aqua;
+            color: black;
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid black;
+        }
+        .flexitem2{
+            background-color: rgb(93, 231, 12);
+            color: black;
+            margin: 20px;
+            padding: 20px;
+            border: 2px dashed black;
+        }
+        .flexitem4{
+            background-color: rgb(201, 221, 19);
+            color: black;
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid black;
+        }
+            
+        @media screen and (max-width: 1200px) {
+            body {
+                background-color: rgb(27, 110, 218);
+                .flexcont{
+                display:flex;
+                align-items: baseline;
+                }
+            }
+        }
+        @media screen and (min-width: 800px) {
+            body {
+                background-color: rgb(218, 65, 27);
+                .flexcont{
+                display:flex;
+                align-items: baseline;
+                }
+            }
+        }
+        @media screen and (min-width: 600px) {
+            .flexitem1 {
+                background-color: rgb(224, 53, 202);
+                .flexcont{
+                display:flex;
+                align-items: baseline;
+                }
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!--Flexbox Example -->
+    <h1>Flexing Content</h1>
+    <div class="flexcont">
+        <div class="flexitem1"> Who are we?
+            <h1>About</h1>
+            <p>Sheriff Geospatial Data Hub is a cutting-edge platform designed to streamline the storage, management, and analysis of geospatial data for various applications.<br><br> Through advanced GIS and remote sensing technologies, Sheriff Geospatial Data Hub offers a comprehensive solution for organizations and individuals to harness the power of spatial data in decision-making processes.<br><br> Its user-friendly interface facilitates easy access to a wide range of geospatial datasets, including satellite imagery, topographic maps, and demographic information. <br><br>The platform's robust analytical tools enable users to perform complex spatial analyses, such as land cover classification, urban growth monitoring, and natural resource management. <br><br> With its emphasis on data accuracy, reliability, and scalability, Sheriff Geospatial Data Hub is poised to become a cornerstone resource for professionals and researchers in the field of geospatial science and technology.</p>
+        </div>
+        <div class="flexitem2"> Accademy
+            <h1>This section is a gateway to w3schools</h1>
+            <p>click the button to go to w3schools website</p>
+            <a href="https://www.w3schools.com/" target="_blank">
+                <button type="button">W3Schools</button>
+            </a>
+        </div>
+        <div class="flexitem4"> Contact infomation
+            <h1>Lets get in touch and serve you</h1>
+            <p>Tell: 070003546</p>
+            <p>Mail: hsdgdvgs@gmail.com</p>
+            <p>Fax: NULL</p>
+
+        </div>
+    </div>
+</body>
+</html>
