@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gateway1</title>
+        <style>
+            body{
+                background-color: aqua;
+                width: 800px;
+                padding: 20PX;
+            }
+            .detail{
+                margin-left: 200px;
+                background-color: rgb(200, 255, 0);
+                font-family: 'Times New Roman';
+                font-size: 22px;
+                width: 500px;
+                padding: 10px;
+            }
+            .detail input{
+                border-radius: 10px;
+                width: 200px;
+                height: 30px;
+                background-color: darkolivegreen;
+                border: 3px solid black;
+            }
+            ::placeholder{
+                color: white;
+            }
+            .alert{
+                margin-left: 200px;
+                background-color: rgb(200, 255, 0);
+                font-family: 'Times New Roman';
+                font-size: 22px;
+                width: 500px;
+                padding: 10px;
+            }
+            .alert input{
+                border-radius: 10px;
+                width: 200px;
+                height: 30px;
+                background-color: rgb(155, 238, 13);
+                border: 3px solid black;
+
+            }
+            .btn{
+                width: 100px;
+                height: 30px;
+                background: orange;
+                border: none;
+                margin-top: 20px;
+                border-radius: 10px;
+                cursor: pointer;
+                color: white;
+                font-size: 18px;
+                transition: 0.4s ease;
+                font-family: 'Times New Roman';
+                margin-left: 200px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!--using fieldset and legend tags-->
+
+        <form action="/action_page.php">
+            <fieldset class="detail">
+              <legend>Signin:</legend>
+              <label for="username" >Username:</label>
+              <input type="text" id="username" name="username" placeholder="Enter Username Here"><br><br>
+              <label for="password">password</label>
+              <input type="text" id="password" name="password" placeholder="Enter Password Here"><br><br>
+            </fieldset>
+
+            <fieldset class="alert">
+              <legend>Register For Mail Alert:</legend>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Ener your Email" required><br><br>
+              <label for="comments">Comments</label>
+              <textarea style="color:aqua; background-color: black ;" id="comments" name="comments" rows="4" placeholder="Give your comments"></textarea><br><br>
+              <label for="newsletter">Subscribe to newsletter</label>
+              <input type="checkbox" id="newsletter" name="newsletter" placeholder="Monthly News"><br><br>
+            </fieldset>
+
+            <button type="submit" class="btn btn-primary"><a href="file:///C:/Users/cybasol%20io/Desktop/JS/Codes/Act.html" target="_blank"></a>Submit</button>
+
+          </form>
+    </body>
+</html>

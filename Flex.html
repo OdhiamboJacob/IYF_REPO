@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <title>Flex-box-Tutorial</title>
+    <style>
+        
+        .heading{
+            background-color: aquamarine;
+            width: fit-content;
+            height: fit-content;
+            font-size: 22px;
+            font-family: Cambria;
+            border: 2px solid black;
+        }
+        .note{
+            background-color: rgb(210, 233, 4);
+            width: fit-content;
+            height: fit-content;
+            font-size: 22px;
+            font-family: Cambria;
+            border: 2px solid black;
+            flex-shrink: 3;
+            padding: 10px;
+        }
+        .intro{
+            background-color: chartreuse;
+            width: fit-content;
+            height: fit-content;
+            font-size: 16px;
+            font-family: 'Gill Sans';
+            border: 2px solid red;
+            flex-shrink: 3;
+            padding: 10px;
+        }
+        .main{
+            background-color: aquamarine;
+            /*min-width: 500px;*/
+            height: fit-content;
+            font-size: 22px;
+            font-family: Cambria;
+            border: 2px solid black;
+            flex-grow: 1;
+            padding: 10px;
+        }
+        .sid{
+            background-color: rgb(231, 243, 208);
+            width: fit-content;
+            font-size: 22px;
+            font-family: Cambria;
+            border: 2px solid black;
+            flex-shrink: 3;
+            padding: 10px;
+            opacity: 100%;
+            text-decoration: solid;
+            border-radius: 20px;
+        }
+        .sid child{
+            stop-opacity: 1;
+        }
+        
+        .cont{
+            border: 2px solid blue;
+            background-color: aquamarine;
+            opacity: 100%;
+            color: blue;
+        }
+        .all{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content:space-around;
+            align-items:baseline;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            gap: 5px;
+        }
+        .icn{
+            width: 30px;
+            padding-right: 20px;
+        }
+        .fa{
+            color: blue;
+            padding-right: 30px;
+        }
+        body{
+            background-image: url(../images/background.jpeg);
+            background-repeat: no-repeat;
+            background-position:center;
+            background-size: 100%;
+            background-attachment: fixed;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <section class="heading">
+        <h1><i class="fa fa-home" ></i>WELCOME TO SHERIFF GEOSPATIAL DATA HUB</h1>
+        
+    </section>
+
+    <section class="all">
+        <section class="note">
+            <h1>Welcome note</h1>
+            <p> We serve our clients with love and respect. </p>
+        </section>
+
+        <section class="intro">
+            <h2> This is the introduction</h2>
+            <p>This website works with flexible content-boxes </p>
+        </section>
+
+        <section class="main">
+            <h2>Content</h2>
+            <p>This is the main content</p>
+            <section>
+                <a href="https://www.w3schools.com/css/css_icons.asp">
+                    <button>Go to W3</button>
+                </a>
+            </section>
+        </section>
+        <section>
+            <div class="sid">
+                <div class="cont">
+                    <h2>Contact information</h2>
+                    <p>Email: sheriff@gmail.com</p>
+                    <p>Tell:070000112</p>
+                    <p >Fax: Null</p>
+                    <section>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15931.227175968545!2d38.54662156746232!3d-3.3972771394061425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1839290137208a5d%3A0xf6fdf18ca246425d!2sClub%20shalex!5e0!3m2!1sen!2ske!4v1710356533447!5m2!1sen!2ske" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </section>
+                </div>
+            </div>
+        </section>
+        
+    </section>
+
+</body>
+</html>

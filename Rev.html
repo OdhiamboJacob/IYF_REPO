@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The revision Page</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <style>
+            body{
+                font-size: 22px;
+                font-family:'Times New Roman' ;
+                color: rgb(190, 21, 21);
+                margin: 10px;;
+                padding: 10px;
+            }
+            legend{
+                color: black;
+                font-family: 'Courier New';
+                font-size: 14px;
+                padding-top:10px ;
+                margin-left: 50px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <section>
+            <p>choose your favourite web language</p>
+            <form>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">HTML</label><br>
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label for="css">Python</label><br>
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label for="javascript">JavaScript</label>
+            </form>
+        </section>
+        <section>
+            <p>choose the asset you own</p>
+            <form>
+                <input type="radio" id="bike" name="automobile" value="Boxer">
+                <label for="bike">Boxer</label><br>
+                <input type="radio" id="car" name="automobile" value="Lambo">
+                <label for="car">Lambo</label><br>
+                <input type="radio" id="ndege" name="automobile" value="Chopper">
+                <label for="ndege">Chopper</label>
+            </form>
+        </section>
+        <section>
+            <form action="/action_page.php" target="_blank" method="post" autocomplete="on" novalidate>
+                <legend>Cofirm Identity</legend>
+                <label for="Fname">First name</label>
+                <input type="text" id="Fname" name="Name1">
+                <label for="Lname">Last name</label>
+                <input type="text" id="Lname" name="Name2">
+                <input type="submit" value="submit">
+            </form>
+        </section>
+        <label for="cars" >choose your car</label>
+        <select name="cars" id="cars" size="1">
+            <option value="audi">Audi</option>
+            <option value="rolroyce">RolRoyce</option>
+            <option value="toyota">Toyota</option>
+        </select>
+<!--to be revised per piece-->
+        <h2>My First JavaScript</h2>
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+<p>the time is</p>
+<p id="demo"> </p>
+
+<button type="button" onclick="alert('welcome to sheriff data hub')">Get Data</button>
+
+<form action="/https://www.w3schools.com/html/html_form_elements.asp">
+    <fieldset>
+        <legend>Personal Credentials</legend>
+        <label for="name">enter first name</label>
+        <input type="text" name="Name" id="fname" placeholder="Fname">
+        <label for="lname">enter last name</label>
+        <input type="text" name="Name" id='lname' placeholder="Lname">
+        <label for="email">enter email address</label>
+        <input type="text" name="Email" id="email" placeholder="sheriff@gmail.com">
+    </fieldset>
+    <fieldset>
+        <legend>Data search</legend>
+        <label for="data">Geodata</label>
+        <input type="checkbox" name="Geodata" id="data">
+        <label for="dataformat">select Suported data formats</label>
+        <select name="dataformat" id="dataformat" size="1">
+            <option value="select">select</option>
+            <option value=".shp">Shapefile</option>
+            <option value=".jpg">Jpeg</option>
+            <option value=".json">GeoJson</option>
+            <option value=".tif">Raster</option>
+        </select>
+        <button type="submit">Submit</button><br>
+    
+    </fieldset>
+    <!--sugestion list in input box-->
+    <fieldset>
+        <legend>Meals and Drinks</legend>
+        <fieldset>
+            <legend>Hard drinks in stork</legend>
+            <label for="drinks">Available Leaker</label>
+            <form action="/action_page.php">
+                <input list="drinks">
+                <datalist id="drinks" name="Leaker">
+                    <option value="Gordons">
+                    <option value="Viceroy">
+                    <option value="Hunters">
+                    <option value="Bluewaves">
+                    <option value="Safari">
+                    <option value="kane xtra">
+                    <option value="JackDaniels">
+                </datalist>
+            </form>
+        </fieldset>
+
+    </form>
+    <fieldset>
+        <legend>Main meals and Bites</legend>
+        <label for="meals">Served meals</label>
+        <form action="/action_page.php">
+            <input list="meals">
+            <datalist id="meals">
+                <option value="Choma">
+                <option value="Beaf">
+                <option value="pork">
+                <option value="chicken">
+                <option value="fish">
+            </datalist>
+        </form>
+    </fieldset>
+</fieldset>
+    </body>
+</html>

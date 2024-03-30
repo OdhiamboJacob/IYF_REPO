@@ -1,0 +1,159 @@
+body{
+    background-color: aquamarine;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    padding: 0%;
+
+}
+.btn{
+    width: 75px;
+    height: 30px;
+    background: orange;
+    border: none;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    transition: 0.4s ease;
+    font-family: 'Times New Roman';
+}
+.btn:hover{
+    background-color: white;
+    font-family: 'Times New Roman';
+    text-decoration: none;
+    color: black;
+    font-weight: bold
+}
+.info1{
+    font-family: 'Times New Roman';
+    font-size: px;
+    padding-top: 10px;
+    display: flex;
+
+}
+.test{
+    max-width: 700px;
+    margin-left:5px;
+    margin-right: 10px;
+    font-family: 'Segoe UI';
+    line-height: 20px;
+    background-image: url(../images/landscape.jpg);
+}
+.navbar{
+    /*width: 200px;*/
+    height: 60px;
+    margin: auto;
+    color:black;
+    display: inline-flex;
+    background-color:  rgb(43, 159, 226);
+}
+.icon{
+    width:auto;
+    /*float: left;*/
+    height: 60;
+}
+.logo{
+    font-weight:bold;
+    font-size: 16px;
+    padding-left: 10px;
+    float: left;
+    padding-top: 10px;
+}
+main{
+    /*width: 70%;*/
+    flex: 50%;
+    background-color: azure;
+}
+aside{
+    background-color: rgb(102, 255, 0);
+    /*margin-left: 5%;*/
+    width: 400px;
+    float: right;
+    flex:auto;
+    font-family: sans-serif;
+    line-height: 30px;
+
+}
+menu{
+    /*float: right;*/
+    display: inline-flex;
+    width: 100%;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(43, 159, 226);
+}
+ul li{
+    list-style:none;
+    margin-left: 50px;
+    margin-top: 0px;
+    font-size: 20px;
+}
+ul li a{
+    text-decoration:none ;
+    color: white;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+ul li a:hover{
+    color: coral;
+    background-color: aqua;
+}
+.searchbar{
+    margin-left: 70px;
+    mask-position: right;
+    margin-top: 10px;
+
+}
+.ft{
+    background-color: rgb(110, 187, 74);
+    text-align: left;
+    padding: 10px;
+    font-family: fantasy;
+    margin-top: 30px;
+    display: flex;
+}
+.contact{
+   float: right;
+   margin-left: 800px;
+}
+.navbar ul li:hover{
+    background-color: white;
+    border-radius: 5px;
+    color: blue;
+}
+.sub-menu1{
+    display: none;
+}
+.navbar ul li:hover .sub-menu1{
+    display: block;
+    position:relative;
+    background: rgb(102, 255, 0);
+    margin-left: 0%;
+    margin-right: 5px;
+    text-align: left;
+}
+.navbar ul li:hover .sub-menu1 ul{
+    display: block;
+    margin:5px;
+    padding: 0%;
+}
+.navbar ul li:hover .sub-menu1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted black;
+    background: transparent;
+    border-radius: 10px;
+
+}
+image{
+    width: 200px;
+    height: 400px;
+}

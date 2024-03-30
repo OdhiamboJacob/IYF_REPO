@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Document</title>
+    <style>
+        body{
+            width: 100%;
+        }
+        header{
+            text-align: center;
+            background-color: aqua;
+            font-family: Verdana;
+            font-size: 18px;
+            top: 0;
+            position: fixed;
+            width:100%;
+            padding: 10px;
+            margin: 0;
+        }
+        nav{
+            text-align: center;
+            background-color: aquamarine;
+            padding: 5px;
+            width:100%;
+            margin-top: 30px;
+            position:fixed;
+
+        }
+        nav a{
+            margin-left: 20px;
+            margin-right: 20px;
+            text-decoration: none;
+        }
+        nav input,label{
+            float:inline-end;
+            background-color: aquamarine;
+        }
+        .internal{
+            margin-top: 70px;
+        }
+        .flexcont{
+            display:flex;
+            align-items: baseline;
+            margin-right: 10px;
+        }
+        .flexitem1{
+            background-color: aqua;
+            color: black;
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid black;
+        }
+        .flexitem2{
+            background-color: rgb(93, 231, 12);
+            color: black;
+            margin: 20px;
+            padding: 20px;
+            border: 2px dashed black;
+        }
+        .flexitem3{
+            background-color: rgb(201, 221, 19);
+            color: black;
+            margin: 20px;
+            padding: 20px;
+            border: 2px solid black;
+        }
+
+        @media screen and (max-width: 1200px) {
+            body {
+                background-color: rgb(27, 110, 218);
+                .flexcont{
+                display:flex;
+                align-items: baseline;
+                }
+            }
+        }
+        @media screen and (min-width: 800px) {
+            body {
+                background-color: rgb(218, 65, 27);
+                .flexcont{
+                display:flex;
+                align-items: baseline;
+                }
+            }
+        }
+        @media screen and (min-width: 600px) {
+            .flexitem1 {
+                background-color: rgb(224, 53, 202);
+                .flexcont{
+                display:flex;
+                align-items: baseline;
+                }
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!--Flexbox Example -->
+    <div>
+        <header> AFRICAN PHARMACEUTICAL NETWORK</header>
+    </div>
+    <div>
+        <nav>
+            <a href="#flexitem1" target="_blank">ABOUT</a>
+            <a href="#flexitem2" target="_blank">SERVICES</a>
+            <a href="#flexitem3" target="_blank">ACCADEMY</a>
+            <a href="#">JOBS</a>
+            <input type="text" id="search" placeholder="TYPE TO SEARCH">
+            <label for="search"><button type="submit">SEND</button></label>
+        </nav>
+    </div>
+    <div class="internal">
+        <h1>Flexing Content</h1>
+        <div class="flexcont">
+            <div class="flexitem1"> Who are we?
+                <h1>About</h1>
+                <p>The African Pharmaceutical Network (APN) is a collaborative platform that facilitates the exchange of knowledge, resources, and expertise within the pharmaceutical sector across the African continent. Founded with the aim of enhancing healthcare access and delivery, APN serves as a vital conduit for information sharing, research collaboration, and capacity building among stakeholders including pharmaceutical companies, research institutions, healthcare professionals, and policymakers. Through its initiatives, such as conferences, workshops, and online forums, APN fosters innovation, strengthens regulatory frameworks, and promotes the development of locally relevant pharmaceutical solutions to address the continent's healthcare challenges. By leveraging the power of networking and partnership, APN plays a pivotal role in advancing the pharmaceutical industry's contributions to sustainable healthcare development in Africa.</p>
+            </div>
+            <div class="flexitem2"> Accademy
+                <h1>This section is a gateway to APN ACCADEMY</h1>
+                <p>click the button to go to APN ACADEMY website</p>
+                <a href="https://www.w3schools.com/" target="_blank">
+                    <button type="button">APN ACCADEMY</button>
+                </a>
+            </div>
+            <div class="flexitem3">APN Contact infomation
+                <h1>Lets get in touch and serve you</h1>
+                <p>Tell: 070003546</p>
+                <p>Mail:africanphamaceutical network@gmail.com</p>
+                <p>Fax: NULL</p>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
